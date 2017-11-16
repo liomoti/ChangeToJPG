@@ -1,0 +1,1 @@
+gci -ex "*.*" | ?{!$_.PsIsContainer} | ren -new {$_.name + ".jpg"}
